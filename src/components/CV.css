@@ -1,0 +1,91 @@
+.cv-background {
+  background-color: #e0d6cc3e;
+  position: relative;
+  top: 60px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* Täck hela fönstret minus 60px */
+  overflow: auto; /* Hantera innehåll som överskrider fönsterhöjden */
+}
+
+/* Rubrik för CV */
+.cv-background h1 {
+  font-size: 2.5em;
+  color: #004f83;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Sektion för personlig information och andra rutor */
+.cv-section {
+  background-color: #e0d6cc3e;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid-layout för Personlig Information och Kunskaper */
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Flexibel grid med minst 200px kolumnbredder */
+  gap: 10px;
+}
+
+/* Stilar för underrubriker */
+.cv-section h2 {
+  font-size: 1.5em;
+  color: #004f83;
+  margin-bottom: 10px;
+}
+
+/* Stilar för text och listor */
+.cv-section p,
+.cv-section ul {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.cv-section ul {
+  padding-left: 20px;
+}
+
+.cv-section ul li {
+  margin-bottom: 5px;
+}
+
+/* Media query för mobilanpassning */
+@media (max-width: 768px) {
+  .cv-background {
+    padding: 15px;
+  }
+
+  .cv-section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .cv-background h1 {
+    font-size: 2em;
+  }
+
+  .cv-section h2 {
+    font-size: 1.3em;
+  }
+
+  .cv-section p,
+  .cv-section ul {
+    font-size: 1em;
+  }
+}

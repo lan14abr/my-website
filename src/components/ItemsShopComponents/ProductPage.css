@@ -1,0 +1,103 @@
+.product-page {
+  background-color: #ece6e13e;
+  position: relative;
+  top: 120px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 120px); /* Täck hela fönstret minus 60px */
+  overflow: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background-color: #dddddd4c;
+  font-weight: bold;
+}
+
+.product-grid {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(220px, 1fr)
+  ); /* Justera bredden */
+  gap: 5px; /* Minska avståndet mellan rutorna */
+}
+
+.product {
+  border: 1px solid #f5f4f4;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.035);
+  text-align: center;
+  height: 350px; /* Sätt en fast höjd på produkterna */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Fördela utrymmet jämnt */
+}
+
+.product img {
+  width: 200px; /* Fast bredd */
+  height: 200px; /* Fast höjd */
+  object-fit: contain; /* Se till att hela bilden fyller rutan */
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.product-info h2 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Sätt tre punkter om texten överflödar */
+  white-space: nowrap;
+}
+
+.product-link {
+  text-decoration: none; /* Ta bort understrykning */
+  color: inherit; /* Bevara färgen på texten */
+}

@@ -1,0 +1,49 @@
+.page-container {
+  text-align: center;
+  background-color: #e0d6cc3e;
+  position: absolute;
+  top: 60px; /* Starta bakgrunden 60px från toppen */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff; /* White background for panels */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel {
+  margin-right: 20px;
+}
+
+.right-panel {
+  margin-left: 20px;
+}
+
+button {
+  margin-right: 10px;
+}
+
+pre {
+  text-align: left;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

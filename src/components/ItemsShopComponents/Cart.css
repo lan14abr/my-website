@@ -1,0 +1,48 @@
+.cart {
+  display: flex;
+  position: fixed;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 0 20px; /* Utrymme runt hela varukorgen */
+  flex-direction: column;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center; /* Centrera elementen vertikalt */
+  justify-content: space-between; /* Dela utrymmet mellan elementen */
+  border: 1px solid #ddd; /* Lägger till en kant runt varje produkt */
+  border-radius: 8px; /* Rundade hörn */
+  padding: 2px; /* Inre avstånd */
+  margin: 10px 0; /* Avstånd mellan produkter */
+  background-color: white; /* Vit bakgrund för varje produkt */
+  width: 90%;
+}
+
+.cart-item img {
+  width: 100px; /* Fast bredd */
+  height: 100px; /* Fast höjd */
+  object-fit: contain; /* Se till att hela bilden fyller rutan */
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 2px;
+  background-color: #ffffff;
+}
+
+.cart-item-info {
+  flex: 1; /* Gör så att infoavsnittet tar upp resterande utrymme */
+}
+
+.cart-item-price {
+  margin-right: 20px; /* Utrymme mellan priset och knappen */
+}
+
+.remove-button {
+  background-color: #ff4d4d; /* Röd bakgrund för remove-knappen */
+  color: white; /* Vit text */
+  border: none; /* Ingen kant */
+  border-radius: 5px; /* Rundade hörn */
+  padding: 5px 10px; /* Inre avstånd */
+  cursor: pointer; /* Pekar att det är klickbart */
+}

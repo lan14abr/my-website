@@ -1,0 +1,119 @@
+{
+  "produce": [
+    {
+      "category": "Base",
+      "items": [
+        {
+          "name": "White Rice",
+          "allergenic": false,
+          "price_sek": 15
+        },
+        {
+          "name": "Brown Rice",
+          "allergenic": false,
+          "price_sek": 17
+        },
+        {
+          "name": "Quinoa",
+          "allergenic": false,
+          "price_sek": 20
+        }
+      ]
+    },
+    {
+      "category": "Meat",
+      "items": [
+        {
+          "name": "Beef",
+          "allergenic": false,
+          "price_sek": 30
+        },
+        {
+          "name": "Chicken",
+          "allergenic": false,
+          "price_sek": 25
+        },
+        {
+          "name": "Tofu",
+          "allergenic": false,
+          "price_sek": 10
+        }
+      ]
+    },
+    {
+      "category": "Vegetable",
+      "items": [
+        {
+          "name": "Carrot",
+          "allergenic": false,
+          "price_sek": 5
+        },
+        {
+          "name": "Spinach",
+          "allergenic": false,
+          "price_sek": 7
+        },
+        {
+          "name": "Bean Sprouts",
+          "allergenic": false,
+          "price_sek": 6
+        },
+        {
+          "name": "Cucumber",
+          "allergenic": false,
+          "price_sek": 5
+        },
+        {
+          "name": "Mushroom",
+          "allergenic": false,
+          "price_sek": 9
+        },
+        {
+          "name": "Zucchini",
+          "allergenic": false,
+          "price_sek": 6
+        }
+      ]
+    },
+    {
+      "category": "Sauce",
+      "items": [
+        {
+          "name": "Soy Sauce",
+          "allergenic": true,
+          "price_sek": 3
+        },
+        {
+          "name": "Gochujang",
+          "allergenic": false,
+          "price_sek": 8
+        },
+        {
+          "name": "Sesame Oil",
+          "allergenic": true,
+          "price_sek": 8
+        }
+      ]
+    },
+    {
+      "category": "Extras",
+      "items": [
+        {
+          "name": "Egg",
+          "allergenic": true,
+          "price_sek": 4
+        },
+        {
+          "name": "Kimchi",
+          "allergenic": false,
+          "price_sek": 12
+        },
+        {
+          "name": "Sesame Seeds",
+          "allergenic": true,
+          "price_sek": 4
+        }
+      ]
+    }
+  ]
+}
